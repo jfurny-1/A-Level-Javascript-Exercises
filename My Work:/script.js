@@ -8,32 +8,33 @@ let image2 = document.getElementById('door2')
 let image3 = document.getElementById('door3')
 
 function door1Clicked(){
-    alert(doorMan)
-     door1Click = True;
     
-    if (doorMan == 1) {
+     door1Click = true;
+    
+    if (doorMan === 1) {
         image1.src="man.jpg"
+        alert(doorMan)
         
     }
 
     };
 
     function door2Clicked(){
-        alert(doorMan)
-         door2Click = True
-        if (doorMan == 2) {
+        
+         door2Click = true
+        if (doorMan === 2) {
             image2.src="man.jpg"
-            
+            alert(doorMan)
         }
         
     };
 
     function door3Clicked(){
-        alert(doorMan)
-         door3Click = True
-        if (doorMan == 3) {
+        
+         door3Click = true
+        if (doorMan === 3) {
             image3.src="man.jpg"
-            
+            alert(doorMan)
         }
         
     };
