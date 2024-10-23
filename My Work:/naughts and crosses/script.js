@@ -5,56 +5,56 @@ function square(num){
             button1.src = "x"
         }
         else if (num === 2) {
-            button1.src = "x"
+            button2.src = "x"
         }
         else if (num === 3) {
-            button1.src = "x"
+            button3.src = "x"
         }
         else if (num === 4) {
-            button1.src = "x"
+            button4.src = "x"
         }
         else if (num === 5) {
-            button1.src = "x"
+            button5.src = "x"
         }
         else if (num === 6) {
-            button1.src = "x"
+            button6.src = "x"
         }
         else if (num === 7) {
-            button1.src = "x"
+            button7.src = "x"
         }
         else if (num === 8) {
-            button1.src = "x"
+            button8.src = "x"
         }
         else if (num === 9) {
-            button1.src = "x"
+            button9.src = "x"
         }
     }   else {
         if (num === 1) {
             button1.src = "o"
         }
         else if (num === 2) {
-            button1.src = "o"
+            button2.src = "o"
         }
         else if (num === 3) {
-            button1.src = "o"
+            button3.src = "o"
         }
         else if (num === 4) {
-            button1.src = "o"
+            button4.src = "o"
         }
         else if (num === 5) {
-            button1.src = "o"
+            button5.src = "o"
         }
         else if (num === 6) {
-            button1.src = "o"
+            button6.src = "o"
         }
         else if (num === 7) {
-            button1.src = "o"
+            button7.src = "o"
         }
         else if (num === 8) {
-            button1.src = "o"
+            button8.src = "o"
         }
         else if (num === 9) {
-            button1.src = "o"
+            button9.src = "o"
         }
     }
     counter++
