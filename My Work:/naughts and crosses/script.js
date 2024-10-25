@@ -2,60 +2,97 @@ let counter = 0
 function square(num){
     if (counter % 2 === 0) {
         if (num === 1) {
-            button1.src = "x"
+            butImg1.src = "X.jpg"
         }
         else if (num === 2) {
-            button2.src = "x"
+            butImg2.src = "X.jpg"
         }
         else if (num === 3) {
-            button3.src = "x"
+            butImg3.src = "X.jpg"
         }
         else if (num === 4) {
-            button4.src = "x"
+            butImg4.src = "X.jpg"
         }
         else if (num === 5) {
-            button5.src = "x"
+            butImg5.src = "X.jpg"
         }
         else if (num === 6) {
-            button6.src = "x"
+            butImg6.src = "X.jpg"
         }
         else if (num === 7) {
-            button7.src = "x"
+            butImg7.src = "X.jpg"
         }
         else if (num === 8) {
-            button8.src = "x"
+            butImg8.src = "X.jpg"
         }
         else if (num === 9) {
-            button9.src = "x"
+            butImg9.src = "X.jpg"
         }
     }   else {
         if (num === 1) {
-            button1.src = "o"
+            butImg1.src = "O.jpg"
         }
         else if (num === 2) {
-            button2.src = "o"
+            butImg2.src = "O.jpg"
         }
         else if (num === 3) {
-            button3.src = "o"
+            butImg3.src = "O.jpg"
         }
         else if (num === 4) {
-            button4.src = "o"
+            butImg4.src = "O.jpg"
         }
         else if (num === 5) {
-            button5.src = "o"
+            butImg5.src = "O.jpg"
         }
         else if (num === 6) {
-            button6.src = "o"
+            butImg6.src = "O.jpg"
         }
         else if (num === 7) {
-            button7.src = "o"
+            butImg7.src = "O.jpg"
         }
         else if (num === 8) {
-            button8.src = "o"
+            butImg8.src = "O.jpg"
         }
         else if (num === 9) {
-            button9.src = "o"
+            butImg9.src = "O.jpg"
         }
     }
     counter++
+
+if (butImg1.src==="X.jpg" && butImg4.src==="X.jpg" && butImg7.src==="X.jpg") {
+    winnerOutput.innerHTML = "Player 1 wins!"
+ } else if (butImg2.src==="X.jpg" && butImg5.src==="X.jpg" && butImg8.src==="X.jpg") {
+    winnerOutput.innerHTML = "Player 1 wins!"
+ } else if (butImg3.src==="X.jpg" && butImg6.src==="X.jpg" && butImg9.src==="X.jpg") {
+    winnerOutput.innerHTML = "Player 1 wins!"
+ }  else if (butImg1.src==="X.jpg" && butImg2.src==="X.jpg" && butImg3.src==="X.jpg") {
+    winnerOutput.innerHTML = "Player 1 wins!"
+ }  else if (butImg4.src==="X.jpg" && butImg5.src==="X.jpg" && butImg6.src==="X.jpg") {
+    winnerOutput.innerHTML = "Player 1 wins!"
+ }  else if (butImg7.src==="X.jpg" && butImg8.src==="X.jpg" && butImg9.src==="X.jpg") {
+    winnerOutput.innerHTML = "Player 1 wins!"
+ }  else if (butImg1.src==="X.jpg" && butImg5.src==="X.jpg" && butImg9.src==="X.jpg") {
+    winnerOutput.innerHTML = "Player 1 wins!"
+ } else if (butImg3.src==="X.jpg" && butImg5.src==="X.jpg" && butImg7.src==="X.jpg") {
+    winnerOutput.innerHTML = "Player 1 wins!"
+}
+
+if (butImg1.src==="O.jpg" && butImg4.src==="O.jpg" && butImg7.src==="O.jpg") {
+    winnerOutput.innerHTML = "Player 2 wins!"
+ } else if (butImg2.src==="O.jpg" && butImg5.src==="O.jpg" && butImg8.src==="O.jpg") {
+    winnerOutput.innerHTML = "Player 2 wins!"
+ } else if (butImg3.src==="O.jpg" && butImg6.src==="O.jpg" && butImg9.src==="O.jpg") {
+    winnerOutput.innerHTML = "Player 2 wins!"
+ } else if (butImg1.src==="O.jpg" && butImg2.src==="O.jpg" && butImg3.src==="O.jpg") {
+    winnerOutput.innerHTML = "Player 2 wins!"
+ } else if (butImg4.src==="O.jpg" && butImg5.src==="O.jpg" && butImg6.src==="O.jpg") {
+    winnerOutput.innerHTML = "Player 2 wins!"
+ } else if (butImg7.src==="O.jpg" && butImg8.src==="O.jpg" && butImg9.src==="O.jpg") {
+    winnerOutput.innerHTML = "Player 2 wins!"
+ } else if (butImg1.src==="O.jpg" && butImg5.src==="O.jpg" && butImg9.src==="O.jpg") {
+    winnerOutput.innerHTML = "Player 2 wins!"
+ } else if (butImg3.src==="O.jpg" && butImg5.src==="O.jpg" && butImg7.src==="O.jpg") {
+    winnerOutput.innerHTML = "Player 2 wins!"
+}
+
 }
