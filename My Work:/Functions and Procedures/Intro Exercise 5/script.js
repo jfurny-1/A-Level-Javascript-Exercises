@@ -1,45 +1,29 @@
 // 1. Write a procedure to display a welcome message
 function displayWelcomeMessage() {
     // Fill in here
-    document.getElementById('welcomeMessage').innerHTML = 'Welcome to your cart'
-
 }
 
 // 2. Write a function to calculate the total price of items in the cart
 function calculateTotal(cart) {
     // Fill in here
     // Hint: Use a loop or the .reduce() method
-    let totalPrice = 0
-    for (let i = 0; i < 4; i++) {
-        totalPrice += cart[i] 
-    };
-    return totalPrice;
 }
 
 // 3. Write a function to apply a discount
 function applyDiscount(total) {
     // Fill in here
     // Example: Apply a 10% discount if total > $100
-    if (total > 100) {
-        total *= 0.9;
-    };
-    return total;
 }
 
 // 4. Write a function to calculate the final price after tax
 function calculateFinalPrice(totalAfterDiscount, taxRate) {
     // Fill in here
-    let finalPrice = 0
-    finalPrice = totalAfterDiscount - (totalAfterDiscount * taxRate)
-    return finalPrice;
 }
-
 
 // 5. Write a procedure to display the receipt
 function displayReceipt(total, finalPrice) {
     // Fill in here
     // Example output: "The total before tax is $120. The final price after tax is $130.80."
-    receipt.innerHTML = `The total before tax is $${total}. The final price after tax is $${finalPrice}`
 }
 
 // Main Program
