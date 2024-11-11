@@ -1,7 +1,9 @@
 // Framework: Procedure to display a welcome message
 function displayWelcomeMessage(name) {
     // TODO: Display a welcome message like "Hello, [name]!"
+    welcomeMessage.innerHTML = `hello ${name}`
 }
+
 
 // Event listener for the button
 document.getElementById('welcomeButton').addEventListener('click', function() {

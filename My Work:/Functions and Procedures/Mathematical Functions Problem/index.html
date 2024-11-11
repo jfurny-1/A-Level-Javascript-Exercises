@@ -12,19 +12,22 @@
 
         <section>
             <h2>1. Area of a Trapezium</h2>
-            <input type="number" id="trapBase1" placeholder="Base 1">
-            <input type="number" id="trapBase2" placeholder="Base 2">
-            <input type="number" id="trapHeight" placeholder="Height">
+            <input type="text" id="trapBase1" placeholder="Base 1">
+            <input type="text" id="trapBase2" placeholder="Base 2">
+            <input type="text" id="trapHeight" placeholder="Height">
             <button id="btnTrapezium">Calculate Area</button>
+            <p id="outputTrapArea"></p>
             <div id="trapResult"></div>
         </section>
 
         <section>
             <h2>2. Volume and Surface Area of a Cylinder</h2>
-            <input type="number" id="cylRadius" placeholder="Radius">
-            <input type="number" id="cylHeight" placeholder="Height">
+            <input type="text" id="cylRadius" placeholder="Radius">
+            <input type="text" id="cylHeight" placeholder="Height">
             <button id="btnCylinderVolume">Calculate Volume</button>
-            <button id="btnCylinderSurfaceArea">Calculate Surface Area</button>
+            <button id="btnCylinderSurfaceArea" onclick="cylAreaCalc()">Calculate Surface Area</button>
+            <p id="ouputCylVolume"></p>
+            <p id="outputCylArea"></p>
             <div id="cylResult"></div>
         </section>
 

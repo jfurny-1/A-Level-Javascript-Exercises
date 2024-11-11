@@ -1,18 +1,21 @@
 // 1. Write a procedure to display a welcome message
 function displayWelcomeMessage() {
     // Fill in here
+    scores.innerHTML = ('Welcome to the Quiz Score Tracker')
 }
 
 // 2. Write a function to add a new student
 function addStudent(students, name, score) {
     // Fill in here
     // Example: students.push({ name: "Alice", score: 85 });
+    
 }
 
 // 3. Write a function to update a student's score
 function updateScore(students, name, newScore) {
     // Fill in here
     // Hint: Use a loop to find the student by name and update their score
+    
 }
 
 // 4. Write a function to calculate the average score

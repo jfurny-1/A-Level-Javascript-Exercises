@@ -1,6 +1,8 @@
 // Framework: Function to convert Celsius to Fahrenheit
 function convertToFahrenheit(celsius) {
     // TODO: Implement the formula (C * 9/5) + 32
+    fahrenheitResult = (celsius * 9/5) + 32
+    return fahrenheitResult
 }
 
 // Framework: Procedure to display the converted temperature
