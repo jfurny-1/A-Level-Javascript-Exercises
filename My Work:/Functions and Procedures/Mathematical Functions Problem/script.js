@@ -30,18 +30,34 @@ function cylAreaCalc(radius, height) {
 
 
 // Function to calculate the volume of a cone
-function _________________________________() {
+function coneVolumeCalc(radius, height) {
     // TODO: Write the formula for cone volume
+    radius = document.getElementById('coneRadius').value
+    height = document.getElementById('coneHeight').value
+    let coneVolume = (Math.PI * radius**2 * height) / 3
+    outputConeVol.innerHTML = `The volume is ${coneVolume}`
+
 }
 
 // Function to calculate the hypotenuse using Pythagoras' theorem
-function _________________________________() {
+function hypotenuseCalc(sideA, sideB) {
     // TODO: Write the formula for hypotenuse
+    sideA = document.getElementById('sideA').value
+    sideB = document.getElementById('sideB').value
+    let hypotenuse = (Math.sqrt(sideA**2 + sideB**2))
+    outputHypotenuse.innerHTML = `The hypotenuse is ${hypotenuse}`
 }
 
 // Function to calculate the area of a triangle using Hero's formula
-function _________________________________() {
+function heronsCalc(sideA, sideB, sideC) {
     // TODO: Write the formula for Hero's area
+    alert('ss')
+    sideA = document.getElementById('sideA').value
+    sideB = document.getElementById('sideB').value
+    sideC = document.getElementById('sideC').value
+    let perimeter = sideA + sideB + sideC;
+    let area = Math.sqrt(perimeter*(perimeter - sideA)*(perimeter - sideB)*(perimeter - sideC));
+    outputHerons.innerHTML = `The area is ${area}`
 }
 
 // Event listeners
@@ -61,3 +77,6 @@ document.getElementById("btnCylinderVolume").addEventListener("click", function(
 });
 
 // Add similar event listeners for other buttons.
+let sideA = document.getElementById('sideA').value;
+let sideB = document.getElementById('sideB').value;
+let sideC = document.getElementById('sideC').value;
