@@ -1,13 +1,14 @@
 
-let range = Number(maxNum) - Number(minNum)
 
-function primeCalc(range, minNum, maxNum) {
 
-    alert(Number(minNum))
-let minNum = document.getElementById('minNum');
-let maxNum = document.getElementById('maxNum');
+function primeCalc() {
+output.innerHTML = ""
+let minNum = document.getElementById('minNum').value;
+let maxNum = document.getElementById('maxNum').value;
+let range = Number(maxNum) - Number(minNum);
     let primeVerifier = false;
-
+    
+   
     for (let i = 0; i <= Number(range); i++) {
         
         for(let l = Number(minNum); l <= Number(maxNum); l++) {
@@ -18,7 +19,9 @@ let maxNum = document.getElementById('maxNum');
         } else {
             
             primeVerifier = true;   
-         output.innerHTML = `${l} <br>`;
+            let value = output.innerHTML;
+            alert(value)
+         output.innerHTML = output.innerHTML + `${l} <br>`;
 
         }
     }
