@@ -51,10 +51,9 @@ function hypotenuseCalc(sideA, sideB) {
 // Function to calculate the area of a triangle using Hero's formula
 function heronsCalc(sideA, sideB, sideC) {
     // TODO: Write the formula for Hero's area
-    alert('ss')
-    sideA = document.getElementById('sideA').value
-    sideB = document.getElementById('sideB').value
-    sideC = document.getElementById('sideC').value
+    sideA = document.getElementById('side1').value
+    sideB = document.getElementById('side2').value
+    sideC = document.getElementById('side3').value
     let perimeter = sideA + sideB + sideC;
     let area = Math.sqrt(perimeter*(perimeter - sideA)*(perimeter - sideB)*(perimeter - sideC));
     outputHerons.innerHTML = `The area is ${area}`
