@@ -1,0 +1,17 @@
+#startBTN {
+    background-color:aqua;
+    display: block; margin:auto;
+    width: 100px;
+    border-radius: 30%
+}
+
+#rotatingImage {
+    height: 100px;
+    display:block; margin-left:auto;
+}
+
+#rotatingImage2 {
+    height: 100px;
+    display:block; margin-right:auto
+    
+}
