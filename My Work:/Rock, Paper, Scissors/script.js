@@ -2,34 +2,25 @@ document.body.style.backgroundColor = "#AA0000";
 
 function startGame(){
 
-    let choice = Math.floor(Math.random() * 3) + 1;
-    if (choice === 1) {
-        rotatingImage.src="paper.jpg"
-    } else if (choice === 2) { 
-        rotatingImage.src="R.png"
-    } else {
-        rotatingImage.src="rock.jpg"
+    let choice1 = document.getElementById('player1')
+    let choice2 = document.getElementById('player2')
+
+    if (choice1 === choice2) {
+        winnerOutput.innerHTML = `DRAW!`
+            
+    } else if (choice1 === "rock" && choice2 === "paper") {
+        winnerOutput.innerHTML = `Player 2 WINS!`
+    } else if(choice1 === "rock" && choice2 === "scissors") {
+        winnerOutput.innerHTML = `Player 1 WINS!`
+    } else if (choice1 === "paper" && choice2 === "rock") {
+        winnerOutput.innerHTML = `Player 1 WINS`
+    } else if (choice1 === "paper" && choice2 === "scissors") {
+        winnerOutput.innerHTMl = `Player 2 WINS!`
+    } else if (choice1 === "scissors" && choice2 === "paper") {
+        winnerOutput.innerHTML = `Player 1 WINS!`
+    } else if(choice1 === "scissors" && choice2 === "rock" ) {
+        winnerOutput.innerHTML = `Player 2 WINS!`
     }
-
-    let choice2 = Math.floor(Math.random() * 3) + 1;
-    if (choice2 === 1) {
-        rotatingImage.src="paper.jpg"
-    } else if (choice2 === 2) { 
-        rotatingImage.src="R.png"
-    } else {
-        rotatingImage.src="rock.jpg"
-    }
-
-    if (choice === 1 && choice2 === 1) { 
-        winnerOutput.innerHTML = `DRAW!`
-    } else if (choice === 2 && choice2 === 2) { 
-        winnerOutput.innerHTML = `DRAW!`
-    } else if (choice === 3 && choice2 === 3) { 
-        winnerOutput.innerHTML = `DRAW!`
-    } 
-
-
-
 
 }
 

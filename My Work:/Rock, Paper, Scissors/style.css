@@ -5,13 +5,55 @@
     border-radius: 30%
 }
 
-#rotatingImage {
+#rockImage {
     height: 100px;
-    display:block; margin-left:auto;
+    display:block; 
+    margin-right:auto;
+    margin-left:auto;
+    transform: translateX(+405px);
+    transform: translateY(+102px);
+    border-radius: 10%
 }
 
-#rotatingImage2 {
+#paperImage {
     height: 100px;
-    display:block; margin-right:auto
-    
+    display:block; 
+    margin-right:auto;
+    margin-left:auto;
+    transform: translateX(-385px);
+    border-radius: 10%
+}
+
+#scissorImage {
+    height:100px;
+    margin-right:auto;
+    margin-left:auto;
+    transform: translate(805px, -120px);
+    border-radius: 10%;
+}
+
+#player2 {
+    transform: translate(620px);
+}
+
+#player1Choice {
+    width: 130px;
+    transform: translate(45px, 180px)
+}
+
+#player2Choice {
+    width: 130px;
+    transform: translate(350px, 185px)
+}
+
+#player1Section {
+    transform: translate(200px, -25px)
+}
+
+#player2Section {
+    transform: translate(640px, -80px)
+}
+
+#vs {
+        transform: translate(470px, -30px)
 }
