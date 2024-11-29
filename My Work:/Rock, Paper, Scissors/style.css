@@ -10,8 +10,7 @@
     display:block; 
     margin-right:auto;
     margin-left:auto;
-    transform: translateX(+405px);
-    transform: translateY(+102px);
+    transform: translate(-405px);
     border-radius: 10%
 }
 
@@ -20,7 +19,7 @@
     display:block; 
     margin-right:auto;
     margin-left:auto;
-    transform: translateX(-385px);
+    transform: translate(0px, 100px);
     border-radius: 10%
 }
 
@@ -28,7 +27,7 @@
     height:100px;
     margin-right:auto;
     margin-left:auto;
-    transform: translate(805px, -120px);
+    transform: translate(785px, -120px);
     border-radius: 10%;
 }
 
@@ -55,5 +54,5 @@
 }
 
 #vs {
-        transform: translate(470px, -30px)
+    transform: translate(470px, -30px)
 }
