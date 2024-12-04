@@ -22,9 +22,10 @@ function startGame(){
     }
 
 
-    if (choice1 === choice2) {
-        winnerOutput.innerHTML = `DRAW!`
-    } else if (choice1 === "rock" && choice2 === "paper") {
+
+        
+        
+     if (choice1 === "rock" && choice2 === "paper") {
         winnerOutput.innerHTML = `Player 2 WINS!`
     } else if(choice1 === "rock" && choice2 === "scissors") {
         winnerOutput.innerHTML = `Player 1 WINS!`
@@ -36,6 +37,8 @@ function startGame(){
         winnerOutput.innerHTML = `Player 1 WINS!`
     } else if(choice1 === "scissors" && choice2 === "rock" ) {
         winnerOutput.innerHTML = `Player 2 WINS!`
+    } else {
+        winnerOutput.innerHTML = `DRAW!`
     }
 
 }
