@@ -4,10 +4,16 @@ let player1;
 
 
 function setup() {
-	new Canvas(785, 400);
+	new Canvas(windowWidth, windowHeight);
 	
 	player1 = new Sprite(); 
 	player1.diameter = 50;
+
+	
+}
+
+function preload() {
+	player1 = loadImage('New Piskel.gif');
 }
 
 function movement() {
@@ -29,4 +35,5 @@ player1.vel.y = 0;
 
 function draw() {
 	background('blue');
+	Image(player1, 0,0);
 }
