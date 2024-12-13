@@ -34,14 +34,15 @@ function setup() {
     stopper3 = new Sprite();
     stopper3.height = 5;
     stopper3.width = 10;
-    stopper3.x = 1540;
+    stopper3.x = windowWidth -10;
+    stopper3.y = windowHeight;
     
     stopper3.collider = 'static';
 
     stopper4 = new Sprite();
     stopper4.height = 5;
     stopper4.width = 10;
-    stopper4.x = 1500;
+    stopper4.x = windowWidth -10;
     stopper4.y = 0
     stopper4.collider = 'static';
 
