@@ -139,18 +139,18 @@ function draw() {
       scoreBox1.text = scoreP1;
       scoreBox2.text = scoreP2;
 
-// Barriers for both players
-    //  if(player1.y >= windowHeight) {
-    //    player1.direction = 90;
-    // } else if(player1.y <= 0) {
-    //    player1.speed = 0;
-    //  }
+/* Barriers for both players
+      if(player1.y >= windowHeight) {
+        player1.direction = 90;
+     } else if(player1.y <= 0) {
+        player1.speed = 0;
+      }
 
-    //  if(player2.y >= windowHeight) {
-    //    player2.speed = 0;
-    //  } else if(player2.y <= 0) {
-    //    player2.speed = 0;
-    //  } 
+      if(player2.y >= windowHeight) {
+        player2.speed = 0;
+      } else if(player2.y <= 0) {
+        player2.speed = 0;
+      } */ 
 
 // Winner   
    if(scoreP1 === 10) {
