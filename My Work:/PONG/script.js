@@ -109,9 +109,9 @@ function draw() {
     ball.speed = 15;
    
 // Movement of player 1
-    if(kb.pressing('up')) {
+    if(kb.pressing('w')) {
         player1.direction = -90;
-    } else if(kb.pressing('down')) {
+    } else if(kb.pressing('s')) {
         player1.direction = 90;
     } else {
         player1.speed = 0;
@@ -139,21 +139,20 @@ function draw() {
       scoreBox1.text = scoreP1;
       scoreBox2.text = scoreP2;
 
-/* Barriers for both players
-      if(player1.y >= windowHeight) {
-        player1.direction = 90;
-     } else if(player1.y <= 0) {
+//  Barriers for both players
+      if(player1.collides(barrierT) || player1.collides(barrierL)) {
         player1.speed = 0;
       }
 
-      if(player2.y >= windowHeight) {
+      if(player2.collides(barrierT) || player2.collides(barrierL)) {
         player2.speed = 0;
-      } else if(player2.y <= 0) {
-        player2.speed = 0;
-      } */ 
+      }
+        
+
+
 
 // Winner   
-   if(scoreP1 === 10) {
+if(scoreP1 === 10) {
     winner.text = 'Player 1 has won!';
     ball.speed = 0;
     ball.layer = 1;
