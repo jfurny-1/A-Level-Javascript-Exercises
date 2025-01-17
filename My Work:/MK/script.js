@@ -7,26 +7,26 @@ function preload() {
 function setup() {
 
     // Canvas
-    new Canvas(windowWidth, windowHeight)
+    new Canvas(windowWidth, windowHeight);
     
     // Sprites
     player1 = new Sprite();
     
-
+ 
     //Sprite Images
-    player1.img = 'SpaceMan.png'
-    player1.img.scale = 0.3
+    player1.img = 'SpaceMan.png';
+    player1.img.scale = 0.3;
 
     //Spawns
-    player1.x = 100
-    player1.y = 530
+    player1.x = 100;
+    player1.y = 530;
 
 
 
 }
 function draw(){
     clear();
-    image(cage, 0, 0, windowWidth, windowHeight)
+    image(cage, 0, 0, windowWidth, windowHeight);
 
     //Player Speed
     player1.speed = 10;
@@ -38,6 +38,21 @@ function draw(){
         player1.direction = 180;
     } else {
         player1.speed = 0;
+    }
+    walking()
+}
+
+function walking() {
+    while (kb.pressing('w')) {
+        let i = 1;
+    if(kb.pressing('w') && i === 1) {
+        player1.img = 'SpaceManWalk1.png';
+        player1.img.scale = 0.3; 
+        i++
+     } else if(kb.pressing('w') && i === 2) {
+        player1.img = 'SpaceManWalk2.png';
+        player1.img.scale = 0.3; 
+        i++
     }
 }
 
