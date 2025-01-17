@@ -24,6 +24,7 @@ function setup() {
 
 
 }
+
 function draw(){
     clear();
     image(cage, 0, 0, windowWidth, windowHeight);
@@ -39,12 +40,16 @@ function draw(){
     } else {
         player1.speed = 0;
     }
+
     walking()
 }
-
+//Player 1 Walking Animation
 function walking() {
+
     while (kb.pressing('w')) {
+
         for(let i = 1; i > 11; i++){
+         
          if(i = 1){
             player1.img = 'SpaceManWalk1.png'
             player1.img.scale = 0.3;
@@ -79,6 +84,9 @@ function walking() {
             player1.img = 'SpaceManWalk11.png'
             player1.img.scale = 0.3;
             i = 1;
+         } else {
+            player1.img = 'SpaceMan.png'
+            player1.img.scale = 0.3;
          }
         }
         
