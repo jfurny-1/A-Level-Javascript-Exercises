@@ -40,3 +40,4 @@ function draw(){
         player1.speed = 0;
     }
 }
+
