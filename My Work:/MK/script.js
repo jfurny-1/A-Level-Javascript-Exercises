@@ -44,51 +44,43 @@ function draw(){
 
 function walking() {
     while (kb.pressing('w')) {
-        let i = 1;
-    if(kb.pressing('w') && i === 1) {
-        player1.img = 'SpaceManWalk1.png';
-        player1.img.scale = 0.3; 
-        i++
-     } else if(kb.pressing('w') && i === 2) {
-        player1.img = 'SpaceManWalk2.png';
-        player1.img.scale = 0.3; 
-        i++
-    } else if(kb.pressing('w') && i === 3) {
-        player1.img = 'SpaceManWalk3.png';
-        player1.img.scale = 0.3; 
-        i++
-    } else if(kb.pressing('w') && i === 4) {
-        player1.img = 'SpaceManWalk4.png';
-        player1.img.scale = 0.3; 
-        i++
-    } else if(kb.pressing('w') && i === 5) {
-        player1.img = 'SpaceManWalk5.png';
-        player1.img.scale = 0.3; 
-        i++
-    } else if(kb.pressing('w') && i === 6) {
-        player1.img = 'SpaceManWalk6.png';
-        player1.img.scale = 0.3; 
-        i++
-    } else if(kb.pressing('w') && i === 7) {
-        player1.img = 'SpaceManWalk7.png';
-        player1.img.scale = 0.3; 
-        i++
-    } else if(kb.pressing('w') && i === 8) {
-        player1.img = 'SpaceManWalk8.png';
-        player1.img.scale = 0.3; 
-        i++
-    } else if(kb.pressing('w') && i === 9) {
-        player1.img = 'SpaceManWalk9.png';
-        player1.img.scale = 0.3; 
-        i++
-    } else if(kb.pressing('w') && i === 10) {
-        player1.img = 'SpaceManWalk10.png';
-        player1.img.scale = 0.3; 
-        i++
-    } else if(kb.pressing('w') && i === 11) {
-        player1.img = 'SpaceManWalk11.png';
-        player1.img.scale = 0.3; 
-        i++
-}
-}
+        for(let i = 1; i > 11; i++){
+         if(i = 1){
+            player1.img = 'SpaceManWalk1.png'
+            player1.img.scale = 0.3;
+         } else if(i = 2){
+            player1.img = 'SpaceManWalk2.png'
+            player1.img.scale = 0.3;
+         } else if(i = 3){
+            player1.img = 'SpaceManWalk3.png'
+            player1.img.scale = 0.3;
+         } else if(i = 4){
+            player1.img = 'SpaceManWalk4.png'
+            player1.img.scale = 0.3;
+         } else if(i = 5){
+            player1.img = 'SpaceManWalk5.png'
+            player1.img.scale = 0.3;
+         } else if(i = 6){
+            player1.img = 'SpaceManWalk6.png'
+            player1.img.scale = 0.3;
+         } else if(i = 7){
+            player1.img = 'SpaceManWalk7.png'
+            player1.img.scale = 0.3;
+         } else if(i = 8){
+            player1.img = 'SpaceManWalk8.png'
+            player1.img.scale = 0.3;
+         } else if(i = 9){
+            player1.img = 'SpaceManWalk9.png'
+            player1.img.scale = 0.3;
+         } else if(i = 10){
+            player1.img = 'SpaceManWalk10.png'
+            player1.img.scale = 0.3;
+         } else if(i = 11){
+            player1.img = 'SpaceManWalk11.png'
+            player1.img.scale = 0.3;
+            i = 1;
+         }
+        }
+        
+    }
 }
