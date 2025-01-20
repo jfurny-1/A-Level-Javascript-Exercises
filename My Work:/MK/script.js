@@ -40,15 +40,6 @@ function draw(){
     } else {
         player1.speed = 0;
     }
-    if(kb.holding('w')) {
-        player1.img = 'SpaceManWalk1.png';
-        player1.img.scale = 0.3;
-    }
-
-    while (player1.img != 'SpaceMan.png') {
-    for (let i = 1; i === 11; i++ ) {
-        player1.img = SpaceManWalk[i].png
-    }
-    }
+    
 }
 
