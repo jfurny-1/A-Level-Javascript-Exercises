@@ -1,0 +1,24 @@
+#password {
+    font-family: monospace;
+    background-color: black;
+    color:greenyellow;
+}
+
+#password::placeholder {
+    color:greenyellow; 
+}
+
+#enterB {
+    font-family: monospace;
+    background-color: black;
+    color: greenyellow;
+}
+#linkP1 {
+    
+
+}
+
+    
+
+
+
