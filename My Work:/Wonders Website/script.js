@@ -5,7 +5,7 @@ linkP1.style.display= 'none';
 
 function openP1() {
 
-        if (password ==='0') {
+        if (password ==='KaleStinks0') {
             linkP1.style.display= 'block';
         } else{
             linkP1.style.display= 'none';
