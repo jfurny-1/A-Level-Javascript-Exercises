@@ -41,16 +41,10 @@ function draw(){
     player1.speed = 5;
 
     //Player1 Movement
-    if(kb.pressing('w')) {
-        player1.addAni(walkingrP1)
-        player1.direction = 0;
-    } else if(kb.pressing('s')) {
-        player1.direction = 180;
-        player1.image = 'SpaceMan.png'
-    } else {
-        player1.speed = 0;
-        player1.image = 'SpaceMan.png'
-    }
-    
+    while(kb.pressing('w')) {
+        player1.addAni(walkingrP1);
+        player1.direction = 0;   
 }
+}
+
 
