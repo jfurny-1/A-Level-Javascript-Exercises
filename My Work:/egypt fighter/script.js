@@ -1,7 +1,7 @@
 
 
 function preload() {
-    desert = loadImage('desertBackground.jpg')
+    desert = loadImage('desertBackground.png')
 }
 
 function setup(){
