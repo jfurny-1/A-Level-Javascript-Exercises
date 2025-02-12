@@ -1,5 +1,5 @@
 let player1;
-let anubisBoss;
+let sandBoss;
 
 function preload() {
     desert = loadImage('desertBackground.png')
@@ -11,7 +11,16 @@ new Canvas(windowWidth, windowHeight);
 
 // Charaters
 player1 = new Sprite();
-anubisBoss = new Sprite();
+player1.image = 'player1.png';
+player1.image.scale = 0.9;
+player1.x = 105;
+player1.y = 500;
+
+sandBoss = new Sprite();
+sandBoss.image = 'sandBoss.png';
+sandBoss.image.scale = 0.8;
+sandBoss.x = 1430;
+sandBoss.y = 435;
 
 }
 
