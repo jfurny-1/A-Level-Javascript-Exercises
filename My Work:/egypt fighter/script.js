@@ -12,9 +12,9 @@ new Canvas(windowWidth, windowHeight);
 // Charaters
 player1 = new Sprite();
 player1.image = 'player1.png';
-player1.image.scale = 0.9;
-player1.x = 105;
-player1.y = 500;
+player1.image.scale = 1.1;
+player1.x = 125;
+player1.y = 470;
 
 sandBoss = new Sprite();
 sandBoss.image = 'sandBoss.png';
