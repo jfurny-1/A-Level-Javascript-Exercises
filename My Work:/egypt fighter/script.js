@@ -1,5 +1,6 @@
 let player1;
 let sandBoss;
+let floor;
 
 function preload() {
 desert = loadImage('desertBackground.png')
@@ -9,7 +10,7 @@ walkingP1 = loadAni('player1Walk1.png',
 'player1.png',
 'player1Walk2.png',
 'player1.png', );
-walkingP1.frameDelay = 3;
+walkingP1.frameDelay = 3.5;
 }
 
 function setup(){
@@ -29,6 +30,13 @@ sandBoss.image.scale = 0.8;
 sandBoss.x = 1430;
 sandBoss.y = 435;
 
+// Floor Collider
+floor = new Sprite();
+floor.w = windowWidth;
+floor.y = 470; 
+
+// Gravity
+world.gravity.y = 9.8;
 
 }
 
@@ -45,9 +53,12 @@ if(kb.pressing('d')) {
     player1.addAni(walkingP1)
     player1.direction = 180;
     player1.speed = 4;
-} else {
-    player1.speed = 0;
-}
+} else if(kb.pressed('space')){
+    player1.y = player1.y - 10;
+} else{ 
+        player1.speed = 0
+    }
+
 
 
 }
