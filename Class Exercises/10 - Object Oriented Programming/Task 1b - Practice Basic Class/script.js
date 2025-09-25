@@ -2,14 +2,16 @@
 // Add a method getInfo() that returns a string like: "Title (Year)"
 
 // Uncomment and complete below:
-// class Movie {
-//   constructor(title, year) {
-//     // your code here
-//   }
-//   getInfo() {
-//     // your code here
-//   }
-// }
+ class Movie {
+   constructor(title, year) {
+      this.title = title;
+     this.year = year;
+   }
+   getInfo() {
+     return `${title} (${year})`
+      
+   }
+ }
 
 // Example usage (leave this):
 document.getElementById("btnShow").onclick = function() {
