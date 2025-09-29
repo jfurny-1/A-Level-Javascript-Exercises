@@ -2,18 +2,19 @@
 // Add a method getInfo() that returns a string like: "Name has Population people"
 
 // Uncomment and complete below:
-// class City {
-//   constructor(name, population) {
-//     // your code here
-//   }
-//   getInfo() {
-//     // your code here
-//   }
-// }
+ class City {
+   constructor(name, population) {
+     this.name = name;
+     this.population = population;
+   }
+   getInfo() {
+     return `${this.name} has ${this.population} people`
+   }
+ }
 
 // Example usage (leave this):
 document.getElementById("btnShow").onclick = function() {
-  // const city = new City("London", 9000000);
-  // document.getElementById("output").innerText = city.getInfo();
-  document.getElementById("output").innerText = "(Your City class output will appear here)";
+   const city = new City("London", 9000000);
+   document.getElementById("output").innerText = city.getInfo();
+  
 };
