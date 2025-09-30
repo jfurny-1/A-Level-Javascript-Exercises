@@ -1,4 +1,4 @@
-# Practice: Encapsulation 1
+ret# Practice: Encapsulation 1
 
 Complete the code to create a `BankAccount` class with:
 - A private `#balance` field (use `#` for private fields in JS).

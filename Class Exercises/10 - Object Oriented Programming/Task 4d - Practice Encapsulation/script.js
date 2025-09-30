@@ -2,18 +2,20 @@
 // Add setCode(code) and unlock(guess) methods
 
 // Uncomment and complete below:
-// class Safe {
-//   #code;
-//   constructor() {
-//     // your code here
-//   }
-//   setCode(code) {
-//     // your code here
-//   }
-//   unlock(guess) {
-//     // your code here
-//   }
-// }
+ class Safe {
+   #code;
+   constructor(encode) {
+    this.#code = encode;
+
+  }
+  setCode(code) {
+    this.#code = code;
+
+   }
+   unlock(guess) {
+
+   }
+ }
 
 const safe = new Safe();
 document.getElementById("btnSet").onclick = function() {
