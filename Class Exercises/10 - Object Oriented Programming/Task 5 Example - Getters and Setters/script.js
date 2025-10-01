@@ -2,7 +2,7 @@
 class Student {
   constructor(name, grade) {
     this.name = name;
-    this._grade = grade;
+    thide = grade;
   }
   get grade() {
     return this._grade;

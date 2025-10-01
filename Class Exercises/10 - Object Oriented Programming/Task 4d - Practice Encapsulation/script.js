@@ -4,8 +4,8 @@
 // Uncomment and complete below:
  class Safe {
    #code;
-   constructor(encode) {
-    this.#code = encode;
+   constructor(code) {
+    this.#code = code;
 
   }
   setCode(code) {
@@ -13,16 +13,21 @@
 
    }
    unlock(guess) {
+    if(this.#code === guess) {
+      return `unlocked`;
+    } else 
+      return `Wrong password`
+
 
    }
  }
 
 const safe = new Safe();
 document.getElementById("btnSet").onclick = function() {
-  // safe.setCode("1234");
+   safe.setCode("1234");
   document.getElementById("output").innerText = "(Code set. Try unlock!)";
 };
 document.getElementById("btnUnlock").onclick = function() {
-  // document.getElementById("output").innerText = safe.unlock("1234");
-  document.getElementById("output").innerText = "(Your Safe class output will appear here)";
+   document.getElementById("output").innerText = safe.unlock("1234");
+  
 };
