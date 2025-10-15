@@ -2,8 +2,7 @@
 function simpleHash(code) {
   let sum = 0;
   for (let i = 0; i < code.length; i++) {
-    // sum += parseInt(code[i], ___);
-    // Fill in the blank above
+     sum += parseInt(code[i], 10);
   }
   return sum % 100;
 }

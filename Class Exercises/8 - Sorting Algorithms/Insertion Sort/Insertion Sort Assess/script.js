@@ -46,3 +46,148 @@ document.addEventListener("DOMContentLoaded", function() {
     const initialArray = generateRandomArray();
     displayArray(initialArray);
 });
+
+
+function insertionSort(array) { 
+    for(let i = 1; i < array.length; i++) {
+        let current = array[i];
+        let j = i - 1;
+        while(j >= 0 && array[j] < current) {
+            array[j + 1] = array[j]
+            j--
+        }
+        array[j + 1] = current;
+    }
+    return array;
+}
+
+function insertionSort2(array) {
+    for (let i = 1; i < array.length; i++) {
+        let current = array[i];
+        let j= i - 1;
+        while (j >= 0 && array[j] < current){
+            array[j + 1] = array[j];
+            j--; 
+        }
+        array[j + 1] = current;
+    }
+    return array; 
+}
+
+function insertionSort2(array) {
+    for(let i = 1; i < array.length; i++) {
+        let current = array[i];
+        let j = i - 1;
+        while(j >= 0 && array[j] < current) {
+            array[j + 1] = array[j];
+            j--;
+        }
+        array[j + 1] = current;
+    }
+    return array;
+}
+
+function insertionSort3(array) {
+    for(let i = 1; i < array.length; i++) {
+        let current = array[i];
+        let j = i - 1;
+        while(j >= 0 && array[j] < current) {
+            array[j + 1] = array[j];
+            j--;
+        }
+        array[j + 1] = current;
+    }
+    return array;
+}
+
+function insertionSort4(array) {
+    for(let i = 1; i < array.length; i++) {
+        let current = array[i];
+        let j = i - 1;
+        while(j >= 0 && array[j] < current) {
+            array[j + 1] = array[j];
+            j--;
+        }
+        array[j + 1] = current;
+    }
+    return array;
+}
+
+function insertionSort5(array) {
+    for(let i = 1; i < array.length; i++){ 
+        let current = array[i];
+        let j = i - 1;
+        while(j >= 0 && array[j] < current) {
+            array[j + 1] = array[j];
+            j--;
+        }
+        array[j + 1] = current;
+    }
+    return array;
+}
+
+function insertionSort6(array) {
+    for(let i = 1; i < array.length; i++) {
+        let current = array[i];
+        let j = i - 1;
+        while(j >= 0 && array[j] < current) { 
+            array[j + 1] = array[j];
+            j--;
+        }
+        array[j + 1] = current;
+    }
+    return array;
+}
+
+function insertionSort7(array){
+    for(let i = 1; i < array.length; i++) {
+        let current = array[i];
+        let j = i - 1;
+        while(j >= 0 && array[j] < current) {
+            array[j + 1] = array[j];
+            j--;
+        }
+        array[j + 1] = current;
+    }
+    return array;
+}
+
+function insertionSort8(array) {
+    for(let i = 1; i < array.length; i++) {
+        let current = array[i];
+        let j = i - 1;
+        while(j >= 0 && array[j] < current) {
+            array[j + 1] = array[j];
+            j--;
+        }
+        array[j + 1] = current;
+    }
+    return array;
+}
+
+function insertionSort9(array) {
+    for(let i = 1; i < array.length; i++) {
+        let current = array[i];
+        let j = i -1;
+        while(j >= 0 && array[j] < current) {
+            array[j + 1] = array[j];
+            j--;
+        }
+        array[j + 1] = current
+    }
+    return array;
+}
+
+
+function insertionSort10(array) [
+    for(let i = 1; i < array.length; i++) {
+        let current = array[i];
+        let j = i - 1;
+        while(j >= 0 && array[j] < current) {
+            array[j + 1] = array[j];
+            j--
+        }
+        array[j + 1] = current;
+    }
+    return array;
+]
