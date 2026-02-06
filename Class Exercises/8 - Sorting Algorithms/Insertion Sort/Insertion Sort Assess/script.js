@@ -179,7 +179,7 @@ function insertionSort9(array) {
 }
 
 
-function insertionSort10(array) [
+function insertionSort10(array) {
     for(let i = 1; i < array.length; i++) {
         let current = array[i];
         let j = i - 1;
@@ -190,4 +190,17 @@ function insertionSort10(array) [
         array[j + 1] = current;
     }
     return array;
-]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
